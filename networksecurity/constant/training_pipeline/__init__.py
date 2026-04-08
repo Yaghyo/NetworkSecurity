@@ -13,6 +13,9 @@ FILE_NAME : str = "phisingData.csv"
 TRAIN_FILE__NAME : str = "train.csv"
 TEST_FILE_NAME : str = "test.csv"
 
+SAVE_MODEL_DIR = os.path.join("save_models")
+MODEL_FILE_NAME = "model.pkl"
+
 '''
 Schema file path
 '''
@@ -40,7 +43,7 @@ DATA_VALIDATION_DRIFT_REPORT_DIR:str = "drift_report"
 DATA_VALIDATION_DRIFT_REPORT_FILE_NAME:str ="report.yaml"
 PREPROCESSING_OBJECT_FILE_NAME:str = "preprocessing.pkl"
 '''
-Data Transformation related constant start eith Data_Transformation VAR name
+Data Transformation related constant start with Data_Transformation VAR name
 '''
 
 DATA_TRANSFORMATION_DIR_NAME:str = "data_transformation"
@@ -52,3 +55,12 @@ DATA_TRANSFORMATION_IMPUTER_PARAMS: dict ={
     "n_neighbors" : 3,
     "weights" : "uniform",
 }
+
+'''
+Model Trainer related constant start with MODEL TRAINER VAR name
+'''
+MODEL_TRAINER_DIR_NAME :str = "model_trainer"
+MODEL_TRAINER_TRAINED_DIR :str = "trained_model"
+MODEL_TRAINER_TRAINED_NAME: str = "model.pkl"
+MODEL_TRAINER_EXPECTED_SCORE:float = 0.6
+MODEL_TRAINER_OVER_FITTING_UNDER_FITTING_THRESHOLD: float = 0.05
